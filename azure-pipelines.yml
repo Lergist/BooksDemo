@@ -15,11 +15,11 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+- task: CmdLine@2
+  inputs:
+    script: 'echo Write your commands here.'
 
 - script: |
-  inputs:
-    verbose: true
-    actions: true
       npm install ember-cli@3.1.4
       git pull
       npm install
